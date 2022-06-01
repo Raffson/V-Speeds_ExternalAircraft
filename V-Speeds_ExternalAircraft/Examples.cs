@@ -7,7 +7,7 @@ namespace V_Speeds.Model.Aircrafts
         public ExternalAircraft()
         {
             Gw = 50000;
-            Lsa = 50;
+            Lsa = 250;
             Cl = 1.23;
             Clg = 0.123;
             Thr = 100000;
@@ -20,7 +20,7 @@ namespace V_Speeds.Model.Aircrafts
 
         public override double Thrust(double tas, double density)
         {
-            return Math.Min(1, density / Constants.p0);
+            return Thr * Math.Min(1, density / Constants.p0);
         }
 
     }
@@ -30,7 +30,7 @@ namespace V_Speeds.Model.Aircrafts
         public ExternalAircraftAB()
         {
             Gw = 100000;
-            Lsa = 50;
+            Lsa = 350;
             Cl = 1.23;
             Clg = 0.123;
             Thr = 125000;
@@ -45,7 +45,7 @@ namespace V_Speeds.Model.Aircrafts
 
         public override double Thrust(double tas, double density)
         {
-            return Math.Min(1, density / Constants.p0);
+            return Thr * Math.Min(1, density / Constants.p0);
         }
     }
 }
