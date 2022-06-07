@@ -1,2 +1,1 @@
-# V-Speeds_ExternalAircraft
-A template project for creating your own external aircraft to be used with V-Speeds
+﻿# V-Speeds_ExternalAircraftA template project for creating your own external aircraft to be used with [V-Speeds](https://github.com/Raffson/V-Speeds)
